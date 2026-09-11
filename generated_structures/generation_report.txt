@@ -1,0 +1,48 @@
+CODE V THICKNESS-REPAIR RUN
+Source: smartphone baseline_original.seq
+Source SHA256: b67522da07838f1a9557bfc7a343f041eb25bba83d61cd065b619c913153e8f3
+Selected lenses: L3, L4, L5, L6, L7
+Constraints [mm]: CT=1 to 3; ET>=0.2; center air gap>=0.1; TTL<=13.5
+EFL: measured automatically; no user-entered target
+Generation settings: branch=3; population=15/20/30; seed=20260907
+Real-ray validation: 12 rays; hexapolar; all fields and wavelengths
+
+POWER-PRESERVING THICKNESS GENERATION
+Selected lenses: L3, L4, L5, L6, L7
+Input EFL / TTL: 12.000000000 / 12.823271586 mm
+Generation EFL target / seed TTL: 12.005112736 / 12.871927641 mm
+Seed-gap normalization:
+  S4: 0.051344945 -> 0.100001000 mm [STATIC_CENTER_AND_EDGE_NORMALIZATION]
+Stages:
+  1. L3: parents=1, attempts=3, feasible=3, pruned=0, carried=3
+  2. L4: parents=3, attempts=9, feasible=9, pruned=0, carried=9
+  3. L5: parents=9, attempts=27, feasible=22, pruned=0, carried=22
+  4. L6: parents=22, attempts=66, feasible=33, pruned=13, carried=20
+  5. L7: parents=20, attempts=60, feasible=50, pruned=30, carried=20
+Ray-valid candidates retained: 20
+Rejected attempts:
+  AIR_GAP_EDGE_S10: 1
+  EFL: 37
+  TTL: 10
+Candidates:
+ID      EFL [mm]      TTL [mm]      min CT      min ET    min C-gap    min E-gap
+C00075   12.00511622   13.31327939    1.000000    0.923636    0.1000010    0.0000010
+C00068   12.00511569   13.41657106    1.000000    0.923421    0.1000010    0.0000010
+C00106   12.00511596   13.46512125    1.000000    0.923611    0.1000010    0.0000010
+C00099   12.00511615   13.39772332    1.000000    0.923744    0.1000010    0.0000010
+C00082   12.00511582   13.36959795    1.000000    0.923421    0.1000010    0.0000010
+C00078   12.00511600   13.47720156    1.000000    0.924086    0.1000010    0.0000010
+C00077   12.00511595   13.46388530    1.000000    0.923636    0.1000010    0.0000010
+C00117   12.00511650   13.42176491    1.000000    0.924389    0.1000010    0.0000010
+C00098   12.00511589   13.40401506    1.000000    0.923715    0.1000010    0.0000010
+C00090   12.00511543   13.49781702    1.000000    0.923508    0.1000010    0.0000010
+C00101   12.00511605   13.44794273    1.000000    0.923744    0.1000010    0.0000010
+C00109   12.00511594   13.48468488    1.000000    0.924022    0.1000010    0.0000010
+C00113   12.00511595   13.30989365    1.000000    0.923421    0.1000010    0.0000010
+C00069   12.00511562   13.44991571    1.000000    0.923421    0.1000010    0.0000010
+C00103   12.00511590   13.44089023    1.000000    0.923618    0.1000010    0.0000010
+C00096   12.00511585   13.42968071    1.000000    0.923715    0.1000010    0.0000010
+C00079   12.00511598   13.48612117    1.000000    0.924086    0.1000010    0.0000010
+C00070   12.00511617   13.42387832    1.000000    0.923744    0.1000010    0.0000010
+C00115   12.00511645   13.44895040    1.000000    0.924389    0.1000010    0.0000010
+C00083   12.00511590   13.45153727    1.000000    0.923618    0.1000010    0.0000010

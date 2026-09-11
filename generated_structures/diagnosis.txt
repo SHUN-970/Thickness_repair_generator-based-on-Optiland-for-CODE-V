@@ -1,0 +1,26 @@
+PHYSICAL-LENS THICKNESS DIAGNOSIS
+Limits: CT=[1.000000, 3.000000] mm, ET>=0.200000 mm
+Lens  Surfaces       CT [mm]  CT status        ET [mm]  ET status   Overall
+----  --------  ------------  ----------  -------------  ----------  -------
+L1    S3-S4     1.582322834  OK            1.450198939  OK          OK
+L2    S5-S6     2.458139229  OK            2.232386472  OK          OK
+L3    S7-S8     0.554140316  TOO_THIN      0.673705786  OK          REPAIR
+L4    S9-S10    0.603303101  TOO_THIN      0.645961424  OK          REPAIR
+L5    S11-S12    0.659140728  TOO_THIN      0.583913723  OK          REPAIR
+L6    S13-S14    0.914966915  TOO_THIN      0.929563095  OK          REPAIR
+L7    S15-S16    0.641811809  TOO_THIN      1.026329296  OK          REPAIR
+
+Default repair selection (blank input): L3, L4, L5, L6, L7
+
+AIR-GAP / TOTAL-THICKNESS CHECKS
+Gap   Components             Center [mm]  Center      Edge [mm]  Edge
+----  ---------------------  -----------  ----------  -----------  ----------
+S4    L1->L2                 0.051344945  FAIL        0.134846435  PASS      
+S6    L2->L3                 0.038508709  FAIL        0.106499700  PASS      
+S8    L3->L4                 1.071312272  PASS        1.014734217  PASS      
+S10   L4->L5                 0.861439810  PASS        0.711126984  PASS      
+S12   L5->L6                 1.513007159  PASS        1.424225737  PASS      
+S14   L6->L7                 0.507159692  PASS        0.394979769  PASS      
+S16   L7->PLANE              0.282782283  PASS        0.017872720  PASS      
+TTL: 12.823271586 mm <= 13.500000000 mm: PASS
+System constraints: FAIL (see warnings)
