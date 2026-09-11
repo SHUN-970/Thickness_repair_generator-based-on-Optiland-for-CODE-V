@@ -1,6 +1,6 @@
 # CODE V / Optiland Thickness Repair Tool
 
-A lightweight companion tool for generating **multiple thickness-feasible starting structures** from a CODE V `.seq` file.
+A lightweight companion tool for generating **multiple thickness-feasible starting structures** from a prescription-style CODE V `.seq` file.
 
 The script is intended for situations where an optical design already has a useful first-order structure, but one or more lenses are too thin for practical manufacturing. Instead of forcing a single structure back into the feasible region through repeated constrained optimization, the tool generates a population of alternative, power-preserving candidate structures for subsequent optimization in CODE V or Optiland.
 
@@ -86,6 +86,19 @@ This tool is intended mainly for:
 - Systems using spherical lens surfaces.
 - Designs with sufficient air-gap and total-length margin.
 - Moderate center-thickness corrections where the initial and target thicknesses are reasonably close.
+
+- ### CODE V `.seq` input scope
+
+  The current parser is intended for **prescription-style CODE V `.seq` files**
+  that primarily contain the optical-system definition.
+
+  It has not yet been validated on general CODE V sequence files containing
+  arbitrary commands, macros, optimization procedures, pickups, zoom
+  configurations, or other executable command sequences.
+
+  For the current version, it is recommended to export or prepare a `.seq`
+  file containing only the lens prescription and the system data required to
+  reconstruct the optical model.
 
 ## Running in VS Code
 
